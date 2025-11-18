@@ -66,8 +66,8 @@ struct ContentView: View {
                                 gameScore = 0
                                 gameOver = false
                             }
-                            }))
-                        })
+                        }))
+            })
             
         }
     }
@@ -90,13 +90,12 @@ struct ContentView: View {
                     endTurn()
                 }
             }
-        }
-        else {
-            turnScore += randomValue
+            else {
+                turnScore += randomValue
+            }
         }
     }
 }
-
 #Preview {
     ContentView()
 }
